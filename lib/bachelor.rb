@@ -49,4 +49,13 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  avg_age = 0
+  data.each do |season_num, people|
+    if season_num == season
+      people.each do |person|
+        avg_age += person["age"]
+      end
+    end
+  end
+  avg_age / data[season].length
 end
