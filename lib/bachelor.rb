@@ -15,11 +15,11 @@ end
 def get_contestant_name(data, occupation)
   # code here
   data.each do |season_num, people|
-      people.each do |person|
-        if person["status"] == "Winner"
-          return person["name"].split(" ")[0]
-        end
+    people.each do |person|
+      if person["occupation"] == occupation
+        return person["name"]
       end
+    end
   end
 end
 
