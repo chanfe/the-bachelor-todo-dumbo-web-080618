@@ -20,7 +20,6 @@ def get_contestant_name(data, occupation)
           return person["name"].split(" ")[0]
         end
       end
-    end
   end
 end
 
