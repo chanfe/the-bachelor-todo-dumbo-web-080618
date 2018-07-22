@@ -8,6 +8,7 @@ def get_first_name_of_season_winner(data, season)
           return person["name"].split[0]
         end
       end
+    end
   end
 end
 
