@@ -57,5 +57,6 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  avg_age / data[season].length
+  answer = avg_age / data[season].length
+  answer.round
 end
