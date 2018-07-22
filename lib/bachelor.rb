@@ -14,7 +14,14 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  
+  data.each do |season_num, people|
+      people.each do |person|
+        if person["status"] == "Winner"
+          return person["name"].split(" ")[0]
+        end
+      end
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
